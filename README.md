@@ -17,6 +17,11 @@
 D:\bili\Bilimcp.exe D:\bili\config.yml
 ```
 
+配置文件需要包含你的Bilibili cookie，下面是一个示例：
+```yaml
+Cookie: xxxxx
+```
+
 # Contributor
 
 欢迎代码贡献，有问题请留issue
