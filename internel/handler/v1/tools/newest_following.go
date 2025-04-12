@@ -9,7 +9,7 @@ import (
 	"github.io/dnullp/bilimcp/internel/bili"
 )
 
-func NewestFollowing(ctx context.Context, request mcp.CallToolRequest) (*mcp.CallToolResult, error) {
+func NewestFollowingHandler(ctx context.Context, request mcp.CallToolRequest) (*mcp.CallToolResult, error) {
 
 	myinfo, err := bili.Client().GetAccountInformation()
 	if err != nil {

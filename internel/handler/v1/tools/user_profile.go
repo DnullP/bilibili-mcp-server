@@ -8,7 +8,7 @@ import (
 	"github.io/dnullp/bilimcp/internel/bili"
 )
 
-func UserProfile(ctx context.Context, request mcp.CallToolRequest) (*mcp.CallToolResult, error) {
+func UserProfileHandler(ctx context.Context, request mcp.CallToolRequest) (*mcp.CallToolResult, error) {
 
 	biliClient := bili.Client()
 	myinfo, err := biliClient.GetAccountInformation()
