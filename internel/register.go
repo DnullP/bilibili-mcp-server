@@ -11,7 +11,7 @@ func RegisterServer(s *server.MCPServer) {
 	s.AddTool(userProfile, tools.UserProfileHandler)
 
 	newestFollowing := mcp.NewTool("newestFollowing", mcp.WithDescription("提供用户最新关注的50个up主的列表"))
-	s.AddTool(newestFollowing, tools.UserProfileHandler)
+	s.AddTool(newestFollowing, tools.NewestFollowingHandler)
 
 	findVideo := mcp.NewTool("findVideo", mcp.WithDescription("根据关键词搜索视频"),
 		mcp.WithString("keyword",
